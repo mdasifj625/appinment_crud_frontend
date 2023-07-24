@@ -1,0 +1,78 @@
+.formContainer {
+	max-width: 70%;
+	margin: 0 auto;
+	border: 1px solid #c7c7c7;
+}
+.formContainer h3 {
+	background: linear-gradient(to right, #0e52b0, #8f0fd4);
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	width: 100%;
+}
+
+.inputGroup {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 13px 16px;
+	padding: 15px 14px;
+}
+
+.validationAlert {
+	position: absolute;
+	width: fit-content;
+	height: fit-content;
+	left: 5%;
+	top: 100%;
+	padding: 5px;
+	border: 1px solid #949494;
+	border-radius: 10px;
+	color: #dc3545;
+	background: #f9f9f9;
+	z-index: 10;
+}
+.validationAlert::before {
+	content: '';
+	position: absolute;
+	bottom: 100%;
+	left: 5%;
+	border: solid 10px #858585;
+	border-right-color: transparent;
+	border-left-color: transparent;
+	border-top-color: transparent;
+	z-index: 1;
+}
+.col {
+	position: relative;
+}
+.col input,
+.col select {
+	width: 100%;
+	height: fit-content;
+	border-radius: 25px;
+	outline: none;
+	border: 2px solid #c7c7c7;
+	padding: 15px;
+}
+
+.btnGroup {
+	display: flex;
+	justify-content: space-between;
+	margin: 10px 10px 20px;
+}
+.btnGroup button {
+	padding: 16px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 2px 2px 5px #949494;
+	font-weight: 500;
+}
+.btnGroup .bookBtn {
+	color: #ffffff;
+	background: #056efd;
+}
+.btnGroup .cancelBtn {
+	color: #ffffff;
+	background: #dc3545;
+}
