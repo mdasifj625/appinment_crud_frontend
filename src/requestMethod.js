@@ -1,7 +1,7 @@
-import axios from 'axios';
+import axios from "axios";
 
 const BASE_URL = `${import.meta.env.VITE_BACKEND_URL}/api/v1`;
 
 export const apiRequest = axios.create({
-	baseURL: BASE_URL,
+    baseURL: BASE_URL,
 });
